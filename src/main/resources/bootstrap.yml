@@ -1,0 +1,15 @@
+server:
+  port: 8070
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Dr3amTeam/d-home-config-data.git
+          searchPath: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+  security:
+    user:
+      name: root
+      password: s3cr3t
